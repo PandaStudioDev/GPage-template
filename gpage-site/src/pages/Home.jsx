@@ -235,7 +235,7 @@ function HomePage() {
 
           <div className="text-center mt-8">
             <a
-              href="#"
+              href="/tramites"
               className="inline-block bg-[#691B32] hover:bg-[#4d1425] text-white px-6 py-3 rounded-md font-medium transition-colors duration-200"
             >
               Ver todos los trámites y servicios
@@ -267,14 +267,14 @@ function HomePage() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="/municipio"
                   className="bg-[#BC955B] hover:bg-[#a17a3f] text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center"
                 >
                   Historia y Cultura
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="/municipio#galeria"
                   className="bg-transparent border-2 border-[#691B32] text-[#691B32] hover:bg-[#691B32] hover:text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 flex items-center"
                 >
                   <Image className="mr-2 h-5 w-5" />

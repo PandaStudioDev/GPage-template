@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MapPin,
   Calendar,
@@ -209,6 +209,8 @@ const valoresMunicipales = [
   },
 ];
 
+const urlRefer = window.location.href;
+
 function MunicipioGaleria() {
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
   const [modalAbierto, setModalAbierto] = useState(false);
@@ -250,6 +252,12 @@ function MunicipioGaleria() {
     setIndiceImagen(nuevoIndice);
     setImagenSeleccionada(imagenesFiltradas[nuevoIndice]);
   };
+
+  useEffect(() => {
+    if (urlRefer.includes("galeria")) {
+      window.location.href = "#galeria";
+    }
+  });
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -516,7 +524,7 @@ function MunicipioGaleria() {
                 </div>
               </div>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/M5meG2Bf1DY1xvvH6"
                 className="inline-flex items-center bg-[#691B32] hover:bg-[#4d1425] text-white px-6 py-3 rounded-md font-medium transition-colors duration-200"
               >
                 <Map className="mr-2 h-5 w-5" />
@@ -542,7 +550,7 @@ function MunicipioGaleria() {
       </section>
 
       {/* Galería de Imágenes */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white" id="galeria">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#691B32] mb-2 text-center">
             Galería de Imágenes

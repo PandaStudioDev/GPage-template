@@ -127,7 +127,9 @@ const Footer = () => {
             </p>
             <p className="mb-4 font-medium">9:00 AM - 1:00 PM</p>
             <a
-              href="#"
+              href="https://maps.app.goo.gl/M5meG2Bf1DY1xvvH6"
+              target="_blank"
+              rel="noreferrer"
               className="bg-[#BC955B] hover:bg-[#a17a3f] text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 inline-block"
             >
               Ver ubicación en mapa
