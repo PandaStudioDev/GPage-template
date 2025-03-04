@@ -40,7 +40,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="hover:text-[#BC955B] transition-colors duration-200 font-medium">
-                <a href="#" className="flex items-center">
+                <a href="/municipio" className="flex items-center">
                   <LandPlot className="h-4 w-4 mr-1" />
                   Turismo y Municipio
                 </a>

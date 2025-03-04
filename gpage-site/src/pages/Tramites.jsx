@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-  ChevronLeft,
   Search,
   FileText,
   CreditCard,
   FileSignature,
-  UserCheck,
   X,
   ChevronDown,
   ChevronUp,
@@ -20,7 +18,6 @@ import {
 } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 
 const tramites = [
   {
@@ -665,7 +662,7 @@ function TramitesServicios() {
 
       {/* Modal de detalle del trámite */}
       {modalAbierto && tramiteSeleccionado && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 transition-opacity duration-300">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 transition-opacity duration-300">
           <div
             className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-fadeIn"
             onClick={(e) => e.stopPropagation()}
