@@ -1,0 +1,13 @@
+      <div className="bg-[#691B32] text-white py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center">
+            <Link
+              to="/"
+              className="flex items-center text-white hover:text-[#BC955B] transition-colors duration-200"
+            >
+              <ChevronLeft className="h-5 w-5 mr-1" />
+              <span>Volver al inicio</span>
+            </Link>
+          </div>
+        </div>
+      </div>
